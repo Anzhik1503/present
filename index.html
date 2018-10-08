@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Презентация</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="slide slide-1">
+            <div class="slide__content">
+                <img class="slide__image" src="images/photo.jpg" alt="">
+                <div class="slide__text">
+                    <h1 class="slide__title">Привет!</h1>
+                    У меня не получилось сделать свою презентацию
+                    <br />
+                    <br />
+                    Поэтому я скопировала презентацию Ильи
+                    <br />
+                    <br />
+                    Мне очень жаль.
+                </div>
+            </div>
+        </div>
+        <div class="slide slide-2">
+            <div class="slide__content">
+                <img class="slide__image" src="images/img20.jpg" alt="">
+                
+                <div class="slide__text">
+                    <h1 class="slide__title">Анжела-программист!</h1>
+                    По крайней мере так считают все пенсионеры, которые прошли через меня на 
+                    компьютерных курсах.
+                    <br />
+                    <br />
+                    Поэтому я постараюсь хотя бы немножко оправдать их надежды.
+                </div>
+            </div>
+        </div>
+        <div class="slide slide-3">
+            <div class="slide__content">
+                <img class="slide__image" src="images/img11.jpg" alt="">
+                <div class="slide__text">
+                    <h1 class="slide__title">Пеппа</h1>
+                    ну вот
+                    <br />
+                    <br />
+                    почему-то свинка заняла всё место на экране
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide slide-2">
+            <div class="slide__content">
+                <img class="slide__image" src="images/img23.jpg" alt="">
+                
+                <div class="slide__text">
+                    <h1 class="slide__title">Будем верить</h1>
+                    что я разберусь в этой науке
+                    <br />
+                    <br />
+                   потому что пока я готовилась, появилось очень 
+                   <br />
+                    <br />
+                    очень
+                    <br />
+                    <br />
+                    очень много вопросов
+                </div>
+
+    <script>
+        var pageHeight = 0;
+
+        document.addEventListener("keydown", function (key) {
+            if (key.keyCode === 39) {
+                pageHeight += window.innerHeight;
+                if (pageHeight > window.innerHeight * 3) {
+                    pageHeight = window.innerHeight * 3;
+                }
+                window.scrollTo(0, pageHeight);
+            }
+            if (key.keyCode === 37) {
+                pageHeight -= window.innerHeight;
+                if (pageHeight < 0) {
+                    pageHeight = 0;
+                }
+                window.scrollTo(0, pageHeight);
+            }
+        });
+    </script>
+</body>
+
+</html>
